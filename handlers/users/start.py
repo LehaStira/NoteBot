@@ -1,7 +1,8 @@
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
+from aiogram.types import CallbackQuery
 
-
+from keyboards.inline.start_callback import start_callback
 from keyboards.inline.start_menu import start_choice
 from loader import dp
 
