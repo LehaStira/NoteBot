@@ -1,14 +1,14 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from keyboards.inline.start_callback import start_callback
+from keyboards.inline.new_note_c_callback import new_note_callback
 
 new_note_cathegory = InlineKeyboardMarkup()
 new_note_cathegory.add(InlineKeyboardButton(
     text='Новая',
-    callback_data=start_callback.new(doing='New')
+    callback_data=new_note_callback.new(do='N')
 ))
 
 new_note_cathegory.add(InlineKeyboardButton(
     text='Старая',
-    callback_data=start_callback.new(doing='Old')
+    callback_data=new_note_callback.new(do='O')
 ))
